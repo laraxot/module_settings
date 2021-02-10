@@ -1,0 +1,15 @@
+<?php
+
+namespace Modules\Settings\Repositories;
+
+//---base
+use Modules\Xot\Repositories\XotBaseRepository;
+
+class ConfRepository extends XotBaseRepository {
+    /**
+     * Specify Model class name.
+     *
+     * @return string
+     */
+    protected $model = 'Modules\Settings\Models\Conf';
+}

@@ -1,0 +1,21 @@
+<?php
+namespace Modules\Settings\Http\Controllers\Admin\Settings\namespace;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+//--- traits
+use Modules\Xot\Traits\CrudSimpleTrait as CrudTrait;
+//--- services 
+use Modules\Theme\Services\ThemeService;
+
+
+use Zend;
+
+class ListaController  extends Controller{
+    public function index(){
+    	$trans=trans();
+    	$rows=$trans->getLoader()->namespaces();
+    	$view=ThemeService::getView();
+    	return view($view)->with('view',$view)->with('rows',$rows)->with('lang',\App::getLocale());
+    }
+}
