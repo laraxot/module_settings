@@ -16,6 +16,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string                          $updated_by
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Conf newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Conf newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Conf query()
@@ -27,12 +28,14 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Conf whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Conf whereUpdatedBy($value)
  * @mixin \Eloquent
+ *
  * @property string|null $note
+ *
  * @method static \Illuminate\Database\Eloquent\Builder|Conf whereNote($value)
  * @mixin IdeHelperConf
  */
 class Conf extends Model {
-    //public $table = '';
+    // public $table = '';
     protected $connection = 'settings'; // this will use the specified database connection
 
     public $fillable = [

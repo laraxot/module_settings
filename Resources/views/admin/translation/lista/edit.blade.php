@@ -19,7 +19,7 @@
 <br class="clearfix"/>
 @foreach($rows as $k=>$v)
 	@if(!is_array($v))
-	
+
 	@else
 	@php
 		$params['listum']=$listum.'.'.$k;
@@ -31,6 +31,6 @@
 --}}
 	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 	<hr/><hr/><hr/><hr/>
-	
+
 
 @endsection

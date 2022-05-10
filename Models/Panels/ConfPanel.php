@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\Settings\Models\Panels;
 
 use Illuminate\Http\Request;
-//--- Services --
+// --- Services --
 
 use Modules\Xot\Models\Panels\XotBasePanel;
 
@@ -68,7 +68,7 @@ class ConfPanel extends XotBasePanel {
      * @return \Illuminate\Database\Eloquent\Builder
      */
     public static function indexQuery($data, $query) {
-        //return $query->where('user_id', $request->user()->id);
+        // return $query->where('user_id', $request->user()->id);
         return $query;
     }
 
@@ -101,8 +101,6 @@ class ConfPanel extends XotBasePanel {
 
     /**
      * Get the tabs available.
-     *
-     * @return array
      */
     public function tabs(): array {
         $tabs_name = [];
@@ -112,8 +110,6 @@ class ConfPanel extends XotBasePanel {
 
     /**
      * Get the cards available for the request.
-     *
-     * @return array
      */
     public function cards(Request $request): array {
         return [];
@@ -123,8 +119,6 @@ class ConfPanel extends XotBasePanel {
      * Get the filters available for the resource.
      *
      * @param \Illuminate\Http\Request $request
-     *
-     * @return array
      */
     public function filters(Request $request = null): array {
         return [];
@@ -132,8 +126,6 @@ class ConfPanel extends XotBasePanel {
 
     /**
      * Get the lenses available for the resource.
-     *
-     * @return array
      */
     public function lenses(Request $request): array {
         return [];
@@ -143,8 +135,6 @@ class ConfPanel extends XotBasePanel {
      * Get the actions available for the resource.
      *
      * @param \Illuminate\Http\Request $request
-     *
-     * @return array
      */
     public function actions(Request $request = null): array {
         return [];

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-//$this->routes();
+// $this->routes();
 
 /*-- roba laralum
 $middleware=['web', 'xra.base', 'xra.auth'];

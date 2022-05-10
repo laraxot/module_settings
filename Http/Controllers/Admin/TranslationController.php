@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace Modules\Settings\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-//--- services
+// --- services
 use Illuminate\Contracts\Support\Renderable;
 use Modules\Theme\Services\ThemeService;
 
 class TranslationController extends Controller {
     public function index(): Renderable {
-        //dd(\Lang::localeArray(false));
-        //dd(__());
+        // dd(\Lang::localeArray(false));
+        // dd(__());
         $trans = trans();
         $rows = $trans->getLoader()->namespaces();
         $view = ThemeService::getView();
@@ -27,7 +27,7 @@ class TranslationController extends Controller {
     	dd($trans_namespaces);
     	dd(\Lang::get('food'));
     	*/
-        //dd(trans('food::'));
+        // dd(trans('food::'));
         /*
     	dd($trans_loader);
     	$trans_hints=$trans_loader->hints;

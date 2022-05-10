@@ -8,7 +8,7 @@
 	{!! Theme::include('inner_page',[],get_defined_vars() ) !!}
 	@php
 		/*
-		
+
 		*/
 	@endphp
 	{{--

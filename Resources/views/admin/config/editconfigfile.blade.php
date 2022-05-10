@@ -9,7 +9,7 @@
 			@include($view.'.nav')
 			{{--  settings::topToolbar() --}}
 			<div class="tab-content">
-				 @include($view.'.body') 
+				 @include($view.'.body')
 				<br style="clear:both" />
 			</div>
 		</div>
