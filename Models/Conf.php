@@ -7,13 +7,13 @@ namespace Modules\Settings\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Modules\Settings\Models\Conf.
+ * Modules\Settings\Models\Conf
  *
- * @property int                             $id
- * @property string                          $appname
- * @property string                          $description
- * @property string                          $created_by
- * @property string                          $updated_by
+ * @property int $id
+ * @property string $appname
+ * @property string $description
+ * @property string $created_by
+ * @property string $updated_by
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|Conf newModelQuery()
@@ -27,9 +27,6 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Conf whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Conf whereUpdatedBy($value)
  * @mixin \Eloquent
- * @property string|null $note
- * @method static \Illuminate\Database\Eloquent\Builder|Conf whereNote($value)
- * @mixin IdeHelperConf
  */
 class Conf extends Model {
     // public $table = '';
