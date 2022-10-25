@@ -21,26 +21,26 @@ class SettingsPanel extends XotBasePanel {
 
     public function fields(): array {
         return [
-            (object) ([
+            (object) [
                 'type' => 'Text',
                 'name' => 'appname',
                 'comment' => 'not in Doctrine',
-            ]),
-            (object) ([
+            ],
+            (object) [
                 'type' => 'Text',
                 'name' => 'description',
                 'comment' => 'not in Doctrine',
-            ]),
-            (object) ([
+            ],
+            (object) [
                 'type' => 'Text',
                 'name' => 'keywords',
                 'comment' => 'not in Doctrine',
-            ]),
-            (object) ([
+            ],
+            (object) [
                 'type' => 'Text',
                 'name' => 'author',
                 'comment' => 'not in Doctrine',
-            ]),
+            ],
         ];
     }
 
