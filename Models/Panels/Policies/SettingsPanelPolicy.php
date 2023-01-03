@@ -6,7 +6,7 @@ namespace Modules\Settings\Models\Panels\Policies;
 
 use Modules\Xot\Contracts\PanelContract;
 use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Models\Panels\Policies\XotBasePanelPolicy;
+use Modules\Cms\Models\Panels\Policies\XotBasePanelPolicy;
 
 class SettingsPanelPolicy extends XotBasePanelPolicy {
     public function test(UserContract $user, PanelContract $panel): bool {

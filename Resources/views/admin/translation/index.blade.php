@@ -1,7 +1,7 @@
 @extends('adm_theme::layouts.app')
 @section('page_heading','trasnlations')
 @section('content')
-@include('theme::includes.flash')
+<x-flash-message />
 
 
 @include($view.'.nav');

@@ -1,7 +1,7 @@
 @extends('adm_theme::layouts.app', ['id_dashboard' => 1])
 @section('page_heading','settings')
 @section('content')
-@include('theme::includes.flash')
+<x-flash-message />
 
 {{--
 <div class="nav-tabs-custom">

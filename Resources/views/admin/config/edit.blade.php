@@ -1,7 +1,7 @@
 @extends('adm_theme::layouts.app')
 @section('page_heading','settings')
 @section('content')
-@include('theme::includes.flash')
+<x-flash-message />
 
 <div class="row">
 	<div class="col-md-12">
