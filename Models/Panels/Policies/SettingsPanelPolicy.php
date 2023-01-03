@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Settings\Models\Panels\Policies;
 
-use Modules\Xot\Contracts\PanelContract;
+use Modules\Cms\Contracts\PanelContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Cms\Models\Panels\Policies\XotBasePanelPolicy;
 
